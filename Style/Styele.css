@@ -1,0 +1,113 @@
+:root {
+  --mainColor: #FF2C1F;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  width: 0.5rem;
+  background-color: black;
+}
+
+html::-webkit-scrollbar-thumb {
+  background-color: var(--mainColor);
+  border-radius: 5rem;
+}
+
+.Home {
+      background-image: url('../Imgs/home3.jpg');
+  height: 100vh;
+  background-size: cover;
+}
+
+.nav-link {
+  color: var(--mainColor);
+  font-size: 20px;
+  font-weight: bold;
+  position: relative;
+}
+
+.nav-link:hover {
+  color: var(--mainColor);
+}
+
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 4px;
+  width: 0%;
+  background-color: var(--mainColor);
+  transition: width 0.5s ease-in-out;
+}
+
+.nav-link:hover::after {
+  width: 100%;
+}
+
+.navbar-brand i {
+  color: var(--mainColor);
+}
+
+.HomeContent {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: white;
+}
+
+.Home h1 {
+  width: 50%;
+  font-size: 70px;
+  font-weight: bold;
+  color: white;
+}
+
+.heading {
+  color: white;
+  font-weight: 500;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--mainColor);
+  margin: auto;
+  max-width: 80%;
+}
+
+.cards:hover {
+  cursor: pointer;
+}
+
+.cards img {
+  transition: transform 0.25s;
+}
+
+.cards img:hover {
+  transform: translateY(-10px);
+}
+
+form input {
+  width: 300px !important;
+  height: 50px !important;
+}
+
+form button {
+  right: 10%;
+  background-color: var(--mainColor);
+  color: white;
+  border: 0;
+  font-weight: bold;
+}
+
+span {
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .Home h1 {
+    font-size: px;
+    width: 100%;
+  }
+}
